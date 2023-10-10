@@ -1,0 +1,84 @@
+.kn-block-row1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.kn-block-comp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--white);
+  border: 1px solid var(--light-grey);
+}
+
+.kn-bl-com-col {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0.4rem 0;
+  align-items: baseline;
+}
+
+.kn-bl-com-col:nth-child(2) {
+  justify-content: flex-start;
+}
+
+.kn-bl-com-col > h3 {
+  color: var(--blue-wood);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.kn-bl-com-col > .books {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  color: var(--blue-wood);
+}
+
+.kn-bl-com-col > .increment {
+  font-size: 0.8rem;
+  color: var(--red);
+}
+
+.kn-bl-com-colr {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+
+.kn-bl-com-colr span:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark-navy-blue);
+}
+
+/*  making some responsive design */
+@media screen and (max-width: 1024px) {
+  .kn-block-row1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kn-block-row1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .kn-block-row1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .kn-block-comp {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+}

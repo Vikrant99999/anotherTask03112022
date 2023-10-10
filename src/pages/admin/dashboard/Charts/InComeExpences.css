@@ -1,0 +1,19 @@
+.kn-InComevsExpense-chart-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--light-grey);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0ms;
+}
+
+.kn-bar-char-income-expense{
+  height: 100%;
+  overflow: hidden;
+}
+

@@ -1,0 +1,15 @@
+.kn-global-onboarding-page {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+}
+
+.kn-global-onboarding-steps-completed{
+    position: fixed;
+    top: 60px;
+    height: 5px;
+    background-color: var(--dark-cyan);
+    z-index: 1000;
+}

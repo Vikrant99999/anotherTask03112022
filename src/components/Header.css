@@ -1,0 +1,44 @@
+.kn-global-header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  color: var(--dark-navy-blue);
+  background-color: var(--white);
+  box-shadow: 0 0 5px 2px var(--light-black);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 1000;
+}
+
+.kn-global-header-logo {
+  color: var(--red);
+}
+
+.knghol-logout {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.7rem 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .kn-global-header-only-logo {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .kn-global-header-only-logo {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .kn-global-header-only-logo {
+    padding: 0 1rem;
+  }
+}

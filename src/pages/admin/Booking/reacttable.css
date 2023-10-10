@@ -1,0 +1,283 @@
+.allbooking-table-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.global-react-talbe-view {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.global-react-table-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.global-react-table-header h2 {
+  font-size: 1.5rem;
+  color: var(--dark-navy-blue);
+  margin-bottom: 0.5rem;
+}
+
+.adminViewHeaderLinks {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+}
+
+.btn-primary.addNew {
+  margin-right: 0;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: var(--lovely-purple);
+}
+
+/* table container */
+.global-table-container {
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+}
+
+.global-react-table {
+  border-collapse: collapse;
+  overflow-x: scroll;
+  column-gap: 1rem;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.global-react-table > thead > tr > th,
+.global-react-table > tbody > tr > td {
+  padding: 0.5rem 0.7rem;
+  min-width: 100px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--regent-grey);
+  font-weight: 500;
+}
+
+.global-react-table > thead > tr > th {
+  border-bottom: 1px solid var(--light-grey);
+  color: var(--regent-grey);
+  padding: 1rem 0.7rem;
+  user-select: none;
+  text-transform: capitalize;
+}
+
+.global-react-table > thead > tr > th:nth-child(2) {
+  text-align: center;
+}
+
+.global-react-table > tbody > tr {
+  border-bottom: 1px solid var(--light-grey);
+  cursor: default;
+}
+
+.global-react-table > tbody > tr:hover {
+  background-color: var(--blue-paper);
+}
+
+/* table cell css */
+.bt-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: fit-content;
+}
+
+.btu-profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  background-color: var(--dark-mint);
+  margin-right: 0.8rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.btu-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.btu-name {
+  color: var(--blue-wood);
+  font-weight: 500;
+  font-size: 0.8;
+  white-space: nowrap;
+}
+
+.btu-email {
+  font-weight: 500;
+}
+
+.admin-action-bookings-button {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.admin-action-bookings {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--white);
+  width: fit-content;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px 4px var(--light-grey);
+}
+
+.admin-action-bookings-button.open .admin-action-bookings {
+  display: flex;
+}
+
+.admin-action-bookings .aabOptionButton {
+  white-space: nowrap;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--regent-grey);
+  width: 100%;
+}
+
+.admin-action-bookings a {
+  width: 100%;
+}
+
+.admin-action-bookings .aabOptionButton svg {
+  margin-right: 0.5rem;
+}
+
+.admin-action-bookings .aabOptionButton:hover {
+  background-color: var(--fresh-water);
+  z-index: 1;
+}
+
+.global-react-table > tbody > tr:nth-last-child(2) .admin-action-bookings,
+.global-react-table > tbody > tr:last-child .admin-action-bookings {
+  top: -100px;
+}
+
+/* setting profile img background color */
+.global-react-table > tbody > tr:nth-child(5n + 1) .btu-profile-img {
+  background-color: var(--dark-navy-blue);
+}
+
+.global-react-table > tbody > tr:nth-child(5n + 2) .btu-profile-img {
+  background-color: var(--golden);
+}
+
+.global-react-table > tbody > tr:nth-child(5n + 3) .btu-profile-img {
+  background-color: var(--bright-pink);
+}
+
+.global-react-table > tbody > tr:nth-child(5n + 4) .btu-profile-img {
+  background-color: var(--bright-blue);
+}
+
+/* table cell css end*/
+.global-react-table-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  border-top: none;
+}
+
+.global-react-table-pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.grtp-pg-count {
+  color: var(--carbon-grey);
+  margin-right: 0.5rem;
+}
+
+.grtp-pg-count > strong {
+  color: var(--thunder);
+}
+
+.btn-pagination {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.global-react-table-pagination > button:disabled {
+  background-color: var(--light-black);
+  cursor: not-allowed;
+}
+
+.how-Much-show-On-Page {
+  border: 1px solid var(--light-grey);
+  background-color: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.how-Much-show-On-Page > select {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.how-Much-show-On-Page option {
+  background-color: var(--white);
+  padding: 0.5rem;
+  margin: 1rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 540px) {
+  .global-react-table-header {
+    padding: 0.5rem;
+  }
+
+  .global-table-container {
+    border-left: none;
+    border-right: none;
+  }
+
+  .global-react-table-pagination {
+    padding: 0 0.5rem;
+  }
+}

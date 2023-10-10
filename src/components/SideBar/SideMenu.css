@@ -1,0 +1,204 @@
+.adminPageSidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 290px;
+  z-index: 1000;
+  background-color: #101924;
+  overflow-x: hidden;
+}
+
+body.open .adminPageSidebar {
+  width: 74px;
+}
+
+body.sideMenuOpen .adminPageSidebar {
+  top: 0;
+  left: 0px;
+}
+
+/* admin page sidebar hamburger css */
+.apsbheaderhamburger {
+  position: relative;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  min-height: 56px;
+  padding: 0.5rem 0.7rem;
+  position: relative;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+.apsbhIcon {
+  margin: 0 10px;
+}
+
+.apsbhIcon > svg {
+  font-size: 2rem;
+  color: var(--shadow-blue);
+}
+
+.apsbTitle {
+  color: var(--white);
+  width: 100%;
+  position: relative;
+  text-align: start;
+  white-space: nowrap;
+  font-family: Nunito, sans-serif;
+}
+
+/* admin page sidebar options */
+.apsbNavOptions {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-top: 1rem;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+.apsbNavOptions::-webkit-scrollbar{
+  width: 10px;
+}
+
+.apsbNavOptions::-webkit-scrollbar-thumb{
+  background-color: var(--regent-grey);
+  width: 9px;
+}
+
+.apsbnavop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 0.2rem 0;
+  transition-duration: 0ms;
+  transition-delay: 0ms;
+  transition: 0ms;
+}
+
+.apsbnavop a {
+  width: 100%;
+}
+
+.apsbnavopButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.apsbnavopButton:hover {
+  background-color: var(--light-black);
+}
+
+.apsbNOIcon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  min-width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.8rem;
+}
+
+.apsbNOIcon > svg {
+  font-size: 1.4rem;
+  color: var(--shadow-blue);
+  transition: 0s;
+}
+
+.apsbnavopButton:hover .apsbNOIcon > svg{
+  color: var(--cornflowe-blue);
+}
+
+
+.bookingsIcon svg {
+  font-size: 1.1rem;
+}
+
+.apsbNOtext {
+  color: var(--dark-electric-blue);
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  line-height: 1.25rem;
+  white-space: nowrap;
+}
+
+.apsbnavopButton:hover .apsbNOtext{
+  color: var(--cornflowe-blue);
+}
+
+.apsbNOIconErrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin-right: 1rem;
+}
+
+.apsbNOIconErrow svg {
+  color: var(--shadow-blue);
+}
+
+.apsbnavop.open .apsbNOIconErrow svg {
+  transform: rotate(90deg);
+}
+
+.apsbNMoreOptions {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.apsbnavop.open .apsbNMoreOptions {
+  height: fit-content;
+}
+
+.apsbNMoreOptions a {
+  padding: 0.5rem 4rem;
+  font-size: 0.95rem;
+  color: var(--light-grey);
+  white-space: nowrap;
+}
+
+.apsbNMoreOptions a:hover {
+  color: var(--white);
+}
+
+body.open .apsbTitle,
+body.open .apsbNOtext {
+  opacity: 0;
+}
+
+body.open .apsbNOIconErrow {
+  display: none;
+}
+
+/*  making some responsive disign */
+@media screen and (max-width: 1200px) {
+  .adminPageSidebar {
+    top: 0;
+    left: -290px;
+  }
+}

@@ -1,0 +1,150 @@
+.addbooking-new-pg {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.addbooking-pg-header h2 {
+  color: var(--dark-navy-blue);
+}
+
+.addbooking-form-container {
+  width: 100%;
+  background-color: var(--white);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+}
+
+.addbooking-form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addbooking-form-input {
+  position: relative;
+  display: flex;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 1rem;
+}
+
+.addbooking-form-input.note-input {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group > .form-label {
+  margin-bottom: 0.5rem;
+  color: var(--bright-sky-blue);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.form-group > .form-control {
+  border: 1px solid var(--light-grey);
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  display: block;
+  background-clip: border-box;
+}
+
+.form-group > .form-control:focus {
+  border: 1px solid var(--bright-blue);
+}
+
+.form-group > .form-control::placeholder {
+  color: var(--carbon-grey);
+}
+
+/*  all fields custome css */
+.form-group > #gender-name {
+  cursor: pointer;
+}
+
+.form-group > #photo {
+  padding: 0;
+  position: relative;
+}
+
+.form-group > #photo::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.form-group > #photo::before {
+  content: "Choose files";
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 70%;
+  max-width: 70%;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.form-group > #photo::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "Browse";
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 30%;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  border-left: 1px solid var(--light-grey);
+  border-radius: 0;
+}
+
+.form-group > #note {
+  height: 8rem;
+  resize: none;
+}
+
+.btn-primary.submit {
+  width: 100%;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .addbooking-new-pg {
+    width: 100vw;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .addbooking-form-input {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .addbooking-form-input {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .addbooking-new-pg {
+    padding: 1rem;
+  }
+}

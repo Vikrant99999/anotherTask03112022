@@ -1,0 +1,107 @@
+.kn-recent-activities{
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+}
+
+.kn-recent-activities-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.kn-recent-activities-header h3 {
+  color: var(--dark-navy-blue);
+  font-weight: 500;
+}
+
+.btn-primary.viewmore {
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  margin-right: 0;
+}
+
+.kn-recent-activity {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.kn-recent-activity:last-child {
+  border-bottom: none;
+}
+
+.kn-recent-activity-info {
+  display: flex;
+  align-items: center;
+}
+
+.kn-recent-activity-info-profile{
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: var(--dark-navy-blue);
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.kn-recent-activity-info-name {
+  display: flex;
+  height: 2.4rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kn-recent-activity-info-name span:nth-child(1) {
+  color: var(--thunder);
+  font-size: .9rem;
+}
+
+.kn-recent-activity-info-name span:nth-child(2) {
+  color: var(--carbon-grey);
+  font-size: 0.8rem;
+}
+
+/* color change random */
+.kn-recent-activity:nth-child(5n + 2) .kn-recent-activity-info-profile {
+  background-color: var(--bright-blue);
+}
+
+.kn-recent-activity:nth-child(5n + 3) .kn-recent-activity-info-profile {
+  background-color: var(--golden);
+}
+
+.kn-recent-activity:nth-child(5n + 4) .kn-recent-activity-info-profile {
+  background-color: var(--lovely-purple);
+}
+
+.kn-recent-activity:nth-child(5n + 5) .kn-recent-activity-info-profile {
+  background-color: var(--bright-pink);
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 540px) {
+  .kn-recent-activities {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+}

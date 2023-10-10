@@ -1,0 +1,25 @@
+.admp-global-bottombar {
+  position: relative;
+  width: calc(100% - 290px);
+  left: 290px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-top: 1px solid var(--light-grey);
+  padding: 0 1rem;
+}
+
+body.open .admp-global-bottombar {
+  width: calc(100% - 74px);
+  left: 74px;
+}
+
+/*  making some responsive disign */
+@media screen and (max-width: 1200px) {
+  .admp-global-bottombar {
+    width: 100%;
+    left: 0;
+  }
+}
